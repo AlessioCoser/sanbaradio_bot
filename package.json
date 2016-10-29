@@ -1,0 +1,22 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "xo --env=node --env=mocha",
+    "lint:fix": "xo --env=node --env=mocha --fix",
+    "create": "claudia create --region us-east-1 --api-module bot",
+    "update": "claudia update",
+    "destroy": "claudia destroy && rm claudia.json"
+  },
+  "dependencies": {
+    "claudia": "^2.1.1",
+    "claudia-bot-builder": "^2.3.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true
+  }
+}
