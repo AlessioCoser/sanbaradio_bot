@@ -29,3 +29,11 @@ npm run update [-- --profile your-aws-profile]
 ```
 npm run destroy [-- --profile your-aws-profile]
 ```
+
+
+## Configure bot on telegram
+Information take from: [claudiajs tutorial](https://claudiajs.com/tutorials/hello-world-chatbot.html#telegram-bot-configuration)
+
+- For getting a Telegram bot access token - use _BotFather_ bot for creating bots.
+- Use `npm run update -- --configure-telegram-bot [--profile your-aws-profile]` to configure the access token in your bot.
+
