@@ -37,3 +37,6 @@ Information take from: [claudiajs tutorial](https://claudiajs.com/tutorials/hell
 - For getting a Telegram bot access token - use _BotFather_ bot for creating bots.
 - Use `npm run update -- --configure-telegram-bot [--profile your-aws-profile]` to configure the access token in your bot.
 
+## Configure othe bots
+
+Go to: https://claudiajs.com/tutorials/hello-world-chatbot.html
