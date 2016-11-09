@@ -14,17 +14,17 @@
   "author": "Alessio Coser",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlessioCoser/chatbot.git"
+    "url": "git+https://github.com/AlessioCoser/sanbaradio_bot.git"
   },
   "keywords": [
     "bot",
     "telegram",
     "claudiajs"
   ],
-  "homepage": "https://github.com/AlessioCoser/chatbot#readme",
+  "homepage": "https://github.com/AlessioCoser/sanbaradio_bot#readme",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlessioCoser/chatbot/issues"
+    "url": "https://github.com/AlessioCoser/sanbaradio_bot/issues"
   },
   "dependencies": {
     "claudia": "^2.1.1",
