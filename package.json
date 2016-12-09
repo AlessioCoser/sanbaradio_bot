@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test/**/*",
     "lint": "xo --env=node --env=mocha",
     "lint:fix": "xo --env=node --env=mocha --fix",
     "create": "claudia create --region us-east-1 --api-module bot",
@@ -29,6 +29,9 @@
   "dependencies": {
     "claudia": "^2.1.1",
     "claudia-bot-builder": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
   },
   "xo": {
     "semicolon": false,
