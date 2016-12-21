@@ -1,0 +1,22 @@
+[{
+  "channel": "Burro d'Arachidi",
+  "date": "2016-12-04T18:08:23.000Z",
+  "description": "",
+  "episode": "06x09",
+   "file": {
+     "length": "28750595",
+     "type": "audio/mpeg",
+     "url": "http://www.sanbaradio.it/files/barachidi_06x09.mp3"
+   }
+},
+{
+  "channel": "Burro d'Arachidi",
+  "date": "2016-12-01T18:08:23.000Z",
+  "description": "",
+  "episode": "06x08",
+   "file": {
+     "length": "28750596",
+     "type": "audio/mpeg",
+     "url": "http://www.sanbaradio.it/files/barachidi_06x08.mp3"
+   }
+}]

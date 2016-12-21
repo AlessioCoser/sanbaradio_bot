@@ -1,3 +1,5 @@
+process.env.LOCAL = true
+
 const assert = require('assert')
 const PodcastRepository = require('../lib/podcast-repository')
 
@@ -6,7 +8,8 @@ describe('PodcastRepository', function () {
 
   it('returns empty array if name not found', function () {
     var podcasts = new PodcastRepository()
-    return podcasts.search({category: 'notfound'})
+
+    return podcasts.getByChannel('notfound')
     .then((pods) => {
       assert.deepEqual(pods, [])
     })
@@ -14,7 +17,7 @@ describe('PodcastRepository', function () {
 
   it('returns a simple item', function () {
     var expectedPayload = {
-      "category": "Burro d'Arachidi",
+      "channel": "Burro d'Arachidi",
       "date": "2016-12-04T18:08:23.000Z",
       "description": "",
       "episode": "06x09",
@@ -24,11 +27,12 @@ describe('PodcastRepository', function () {
          "url": "http://www.sanbaradio.it/files/barachidi_06x09.mp3"
        }
     }
-    var podcasts = new PodcastRepository('sanbaradio-podcasts', 'pods.json')
+    var podcasts = new PodcastRepository()
 
-    return podcasts.search({category: "Burro d'Arachidi", episode: '06x09'})
+    return podcasts.getByChannel("Burro d'Arachidi")
     .then((pods) => {
-      assert.deepEqual(pods, [expectedPayload])
+      console.log(pods)
+      assert.deepEqual(pods[0], expectedPayload)
     })
   })
 })
